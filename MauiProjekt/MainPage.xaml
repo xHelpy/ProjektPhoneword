@@ -3,12 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiProjekt.MainPage">
 
-    <VerticalStackLayout Spacing="15" Padding="20">
+    <VerticalStackLayout BackgroundColor="Azure"  Spacing="15" Padding="20">
         <Label Text="Enter a Phoneword" FontSize="20">
             
         </Label>
         <Entry x:Name ="PhoneNumberText" Text="1-555-NETMAUI"></Entry>
-        <Button x:Name="TranslateButton" Text="Translate" Clicked="onTranslate"></Button>
-        <Button x:Name="CallButton" Text="Call" IsEnabled="false" Clicked="onCall"></Button>
+        <Button BackgroundColor="Aqua"  TextColor="black" x:Name="TranslateButton" Text="Translate" Clicked="onTranslate"></Button>
+        <Button BackgroundColor="Beige" TextColor="Black" x:Name="CallButton" Text="Call" IsEnabled="false" Clicked="onCall"></Button>
     </VerticalStackLayout>
 </ContentPage>

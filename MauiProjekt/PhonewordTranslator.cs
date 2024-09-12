@@ -11,11 +11,11 @@ namespace Core
     {
         public static string ToNumber(string raw)
         {
-            if (string.IsNullOrEmpty(raw)) return null;
+            if (string.IsNullOrWhiteSpace(raw)) return null;
 
             raw = raw.ToUpperInvariant();
 
-            var newNumber = new StringBuilder(raw);
+            var newNumber = new StringBuilder();
 
             foreach (var c in raw)
             {
